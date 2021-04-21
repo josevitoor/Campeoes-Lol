@@ -58,7 +58,7 @@ function startFavorite() {
 
 function addFavorite(favorite) {
     localStorage.setItem(favorite, favorite);
-    location.href = "/favorite.html";
+    location.href = "/src/favorite.html";
 }
 
 function removeFavorite(favorite) {
