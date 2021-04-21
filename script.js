@@ -32,7 +32,7 @@ function controlVersion(callBackFunction) {
     };
 
     // Path completo para a requisição AJAX.
-    var url = "httpss://ddragon.leagueoflegends.com/api/versions.json";
+    var url = "https://ddragon.leagueoflegends.com/api/versions.json";
     // Requisição do tipo POST
     xhttp.open("GET", url);
     xhttp.send();
@@ -88,7 +88,7 @@ function callingFavorites(result) {
                     modal(this, obj);
                 }, false);
                 var img = document.createElement('img');
-                img.src = "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/" + obj.data[column].id + "_0.jpg";
+                img.src = "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/" + obj.data[column].id + "_0.jpg";
                 img.className = "card-img-top";
                 var div2 = document.createElement('div');
                 div2.className = "card-body";
@@ -131,7 +131,7 @@ function callingChampions(result) {
                 modal(this, obj);
             }, false);
             var img = document.createElement('img');
-            img.src = "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/" + obj.data[column].id + "_0.jpg";
+            img.src = "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/" + obj.data[column].id + "_0.jpg";
             img.className = "card-img-top";
             var div2 = document.createElement('div');
             div2.className = "card-body";
