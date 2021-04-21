@@ -9,7 +9,7 @@ function xhttpAssincrono(callBackFunction, version, params) {
     };
 
     // Path completo para a requisição AJAX.
-    var url = "http://ddragon.leagueoflegends.com/cdn/" + version + "/data/pt_BR/champion";
+    var url = "https://ddragon.leagueoflegends.com/cdn/" + version + "/data/pt_BR/champion";
     if (!isNaN(params)) {
         url = url + params;
     }
@@ -32,7 +32,7 @@ function controlVersion(callBackFunction) {
     };
 
     // Path completo para a requisição AJAX.
-    var url = "https://ddragon.leagueoflegends.com/api/versions.json";
+    var url = "httpss://ddragon.leagueoflegends.com/api/versions.json";
     // Requisição do tipo POST
     xhttp.open("GET", url);
     xhttp.send();
