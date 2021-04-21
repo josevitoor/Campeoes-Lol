@@ -1,0 +1,50 @@
+.title{
+    font-size: small;
+}
+.text-cards{
+    font-family: 'Roboto Slab';
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+}
+
+.bg-cards{
+    background-color:rgb(174, 124, 24);
+}
+.bg-cards:hover{
+    background-color:rgb(216, 167, 69);
+    top:-4px;
+    box-shadow:0 2px 2px #666;
+}
+
+.body{
+    background-color:rgb(245, 243, 244);
+}
+
+.sub-title{
+    text-shadow: 0 2px 2px rgb(69, 68, 68);
+    color: rgb(245, 204, 122);
+}
+
+.border-grey{
+    border: 1px solid rgb(177, 177, 170);
+    width: 75%;
+}
+
+.color-modal{
+    background-color: rgb(19,20,20);
+    color: white;
+}
+
+.footer-text{
+    font-size: small;
+    color: rgb(125, 125, 125);
+}
+
+.footer{
+    background-color: rgb(19,20,20);
+    color: white;
+    position:fixed;
+    bottom:0;
+    width:100%;
+}

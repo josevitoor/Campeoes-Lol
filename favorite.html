@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Campeões League of Legends</title>
+    <link rel="shortcut icon" type="imagem/x-icon" href="ico.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body onload="startFavorite()" class="body">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark" style="background-color: #131414;">
+        <a class="navbar-brand" href="#">
+            <img src="https://logodownload.org/wp-content/uploads/2014/09/lol-league-of-Legends-logo-2-1.png"
+                width="100">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li>
+                    <a class="nav-link title" href="/main.html" tabindex="-1"
+                        aria-disabled="true"><strong>CAMPEÕES</strong></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link title" href="favorite.html" tabindex="-1"
+                        aria-disabled="true"><strong>FAVORITOS</strong></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Image BG -->
+    <div class="slide mt-5">
+        <div class="carousel-inner">
+            <img src="https://i.pinimg.com/originals/e1/db/21/e1db2116aaff88b7c0d59120aacff7c7.jpg"
+                class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <img src="https://upload.wikimedia.org/wikipedia/pt/b/b5/League_of_Legends_logo_2019.png" width="300">
+                <h5 class="sub-title mt-3">CAMPEÕES FAVORITOS</h5>
+            </div>
+        </div>
+    </div>
+
+    <!-- Line -->
+    <hr class="border-grey mt-5">
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content color-modal">
+                <div class="flex-column modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="close color-modal" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div id="graphic">
+                    <canvas class="bg-dark" id="myChart" width="400" height="400"></canvas>
+                </div>
+                <div class="modal-footer color-modal" id="favorite">
+                    <img src="https://www.nicepng.com/png/full/86-864385_blue-star-vector-and-png-files-last-shadow.png"
+                        class="mx-4" type="button" alt="Favoritar" title="desfavoritar"
+                        style="width: 20px; height: 20px;" onclick="removeFavorite(this.parentElement.value)">
+                    <button type="button" class="btn btn-warning" data-dismiss="modal"
+                        aria-label="Close">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Container of Cards -->
+    <main role="main" class="container-fluid mt-4" id="main">
+        <div class="row" id="card" style="justify-content: center"></div>
+    </main>
+
+    <!-- Footer-->
+    <footer class="color-modal text-center" id="footer">
+        <div class="p-3 mt-5">
+            <p class="footer-text"><strong>©2021 JOSÉ VITOR DE FREITAS CUNHA</strong></p>
+            <a class="img-fluid" href="https://github.com/josevitoor"><img
+                    src="https://icons-for-free.com/iconfiles/png/512/developer+github+media+open+source+social+software+icon-1320137117848589846.png"
+                    title="GitHub" style="width: 30px; height: 30px;"> </a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
